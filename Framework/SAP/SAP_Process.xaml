@@ -117,7 +117,7 @@
       <AssemblyReference>System.Net.WebHeaderCollection</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="1404.0000000000002,11536" sap2010:WorkflowViewState.IdRef="Sequence_25">
+  <Sequence sap:VirtualizedContainerService.HintSize="1150.4,4525.6" sap2010:WorkflowViewState.IdRef="Sequence_25">
     <Sequence.Variables>
       <Variable x:TypeArguments="s:Int32[]" Name="arrMonth">
         <Variable.Default>
@@ -130,14 +130,14 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="SAP Process" sap:VirtualizedContainerService.HintSize="651.2,11512.8" sap2010:WorkflowViewState.IdRef="Sequence_24">
+    <Sequence DisplayName="SAP Process" sap:VirtualizedContainerService.HintSize="584,4502.4" sap2010:WorkflowViewState.IdRef="Sequence_24">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="617.6,166.4" sap2010:WorkflowViewState.IdRef="KillProcess_2" ProcessName="saplogon" />
-      <uix:NSAPLogon AttachMode="ByInstance" DisplayName="SAP Logon" sap:VirtualizedContainerService.HintSize="617.6,627.2" sap2010:WorkflowViewState.IdRef="NSAPLogon_3" ScopeGuid="4b7cb573-6565-46c1-b6df-bf6e80466855" Version="V2">
+      <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="550.4,166.4" sap2010:WorkflowViewState.IdRef="KillProcess_2" ProcessName="saplogon" />
+      <uix:NSAPLogon AttachMode="ByInstance" DisplayName="SAP Logon" sap:VirtualizedContainerService.HintSize="550.4,627.2" sap2010:WorkflowViewState.IdRef="NSAPLogon_3" ScopeGuid="4b7cb573-6565-46c1-b6df-bf6e80466855" Version="V2">
         <uix:NSAPLogon.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
@@ -169,397 +169,31 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </uix:NSAPLogon>
-      <Sequence DisplayName="Export Acture and Budget" sap:VirtualizedContainerService.HintSize="617.6,481.6" sap2010:WorkflowViewState.IdRef="Sequence_29">
+      <Sequence DisplayName="Export FinancialStatement" sap:VirtualizedContainerService.HintSize="550.4,56.8" sap2010:WorkflowViewState.IdRef="Sequence_41">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="S4D(1)200 Actual Sales and Cost by Category" sap:VirtualizedContainerService.HintSize="492.8,56.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Never" ScopeGuid="9189f9b0-8c0b-4398-bd6e-6f1af062b562" Version="V2" WindowResize="Maximize">
+        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="S4D(1)200 Actual VS Budget (By cost Center)" sap:VirtualizedContainerService.HintSize="449.6,3403.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" ScopeGuid="9f3060da-5954-43e2-b790-a76820b9adcf" Version="V2">
           <uix:NApplicationCard.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,2039.2" sap2010:WorkflowViewState.IdRef="Sequence_26">
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,3088.8" sap2010:WorkflowViewState.IdRef="Sequence_42">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'OkCodeField okcd'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382.4,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="9189f9b0-8c0b-4398-bd6e-6f1af062b562" Text="ZFCORP01_COM_S4[k(Enter)]" Version="V4">
-                  <uix:NTypeInto.Target>
-                    <uix:TargetAnchorable ContentHash="3xt59nckSEW58gKYHHn5sQ" DesignTimeRectangle="80, 73, 221, 31" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;sap id='tbar[0]/okcd' /&gt;" Guid="ccd8216e-3c9d-4236-b701-93486e12dcce" InformativeScreenshot="b5653d78ffe94aed587054b687746e8f.png" Reference="FzPfEAG3l0KwKxqQEPE9qQ/VYsRxIiQP0qg9jcJrbcPXA" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='S4D(1)/200 SAP Easy Access' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
-                  </uix:NTypeInto.Target>
-                </uix:NTypeInto>
-                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'CTextField Company Code'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382.4,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="9189f9b0-8c0b-4398-bd6e-6f1af062b562" Text="1000" Version="V4">
-                  <uix:NTypeInto.Target>
-                    <uix:TargetAnchorable ContentHash="MCKM7IIP20m8tC1x1UVpWw" DesignTimeRectangle="546, 231, 104, 31" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;sap id='usr/ctxtS_BUKRS-LOW' /&gt;" Guid="c8da82cd-d4c2-4d56-9cc4-5a7530f0c7c0" InformativeScreenshot="53aa9d84628e97f0cb08b25f067cbb49.png" Reference="FzPfEAG3l0KwKxqQEPE9qQ/MIkunxqQkUeSlEd0NIvXGA" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='S4D(1)/200 Actual Sales and Cost by Category' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
-                  </uix:NTypeInto.Target>
-                  <uix:NTypeInto.VerifyOptions>
-                    <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
-                      <uix:VerifyExecutionTypeIntoOptions.Retry>
-                        <InArgument x:TypeArguments="x:Boolean" />
-                      </uix:VerifyExecutionTypeIntoOptions.Retry>
-                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
-                        <InArgument x:TypeArguments="x:Double" />
-                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
-                    </uix:VerifyExecutionTypeIntoOptions>
-                  </uix:NTypeInto.VerifyOptions>
-                </uix:NTypeInto>
-                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Local Currency'" sap:VirtualizedContainerService.HintSize="382.4,225.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9189f9b0-8c0b-4398-bd6e-6f1af062b562" Version="V4">
-                  <uix:NClick.Target>
-                    <uix:TargetAnchorable ContentHash="gO37httDoEKxwyqwgPlrDw" DesignTimeRectangle="66, 707, 524, 31" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;sap id='usr/radP_CURCOM' /&gt;" Guid="e6fc2216-b13f-4561-8a75-28018b87beb1" InformativeScreenshot="5a3d33d3ff0a014be3dcca4ff43e84de.png" Reference="FzPfEAG3l0KwKxqQEPE9qQ/W5wWPwznmUGGACjcTQJ3jQ" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='S4D(1)/200 Actual VS Budget (By cost Center)' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
-                  </uix:NClick.Target>
-                  <uix:NClick.VerifyOptions>
-                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                      <uix:VerifyExecutionOptions.Retry>
-                        <InArgument x:TypeArguments="x:Boolean" />
-                      </uix:VerifyExecutionOptions.Retry>
-                      <uix:VerifyExecutionOptions.Timeout>
-                        <InArgument x:TypeArguments="x:Double" />
-                      </uix:VerifyExecutionOptions.Timeout>
-                    </uix:VerifyExecutionOptions>
-                  </uix:NClick.VerifyOptions>
-                </uix:NClick>
-                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '11'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382.4,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="9189f9b0-8c0b-4398-bd6e-6f1af062b562" Text="05" Version="V4">
-                  <uix:NTypeInto.Target>
-                    <uix:TargetAnchorable ContentHash="KdDif_6DzUS3mKjykC5q6g" DesignTimeRectangle="546, 877, 44, 31" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;sap id='usr/txtP_PERIOD' /&gt;" Guid="26410ebc-c6c4-4654-9531-c0e1d520d3b8" InformativeScreenshot="62a9dad2c00fa532a0e2e9a2004a6905.png" Reference="FzPfEAG3l0KwKxqQEPE9qQ/-WzxiioDOUmsdU-CDgxE8g" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='S4D(1)/200 Actual VS Budget (By cost Center)' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
-                  </uix:NTypeInto.Target>
-                  <uix:NTypeInto.VerifyOptions>
-                    <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
-                      <uix:VerifyExecutionTypeIntoOptions.Retry>
-                        <InArgument x:TypeArguments="x:Boolean" />
-                      </uix:VerifyExecutionTypeIntoOptions.Retry>
-                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
-                        <InArgument x:TypeArguments="x:Double" />
-                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
-                    </uix:VerifyExecutionTypeIntoOptions>
-                  </uix:NTypeInto.VerifyOptions>
-                </uix:NTypeInto>
-                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '11(1)'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382.4,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="9189f9b0-8c0b-4398-bd6e-6f1af062b562" Text="09" Version="V4">
-                  <uix:NTypeInto.Target>
-                    <uix:TargetAnchorable ContentHash="bZPDDyTahEmdfaOA8ofRqg" DesignTimeRectangle="546, 911, 44, 31" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;sap id='usr/txtP_PERIO2' /&gt;" Guid="1ce5b4d0-ef32-4358-9340-22b005514d0a" InformativeScreenshot="bc45e61f8c1ba16bbc6282fcdb90b17c.png" Reference="FzPfEAG3l0KwKxqQEPE9qQ/ESv-e_6L6Ea5toK18nsB6A" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='S4D(1)/200 Actual VS Budget (By cost Center)' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
-                  </uix:NTypeInto.Target>
-                  <uix:NTypeInto.VerifyOptions>
-                    <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
-                      <uix:VerifyExecutionTypeIntoOptions.Retry>
-                        <InArgument x:TypeArguments="x:Boolean" />
-                      </uix:VerifyExecutionTypeIntoOptions.Retry>
-                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
-                        <InArgument x:TypeArguments="x:Double" />
-                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
-                    </uix:VerifyExecutionTypeIntoOptions>
-                  </uix:NTypeInto.VerifyOptions>
-                </uix:NTypeInto>
-                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '2024'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382.4,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="9189f9b0-8c0b-4398-bd6e-6f1af062b562" Text="2024" Version="V4">
-                  <uix:NTypeInto.Target>
-                    <uix:TargetAnchorable ContentHash="I0s1G9WWNEGr_dCeO0TdIQ" DesignTimeRectangle="546, 945, 74, 31" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;sap id='usr/txtP_GJAHR' /&gt;" Guid="1ee3ad17-187b-4f66-81d4-2c28bd88f32d" InformativeScreenshot="073db2ef0b026f13b9a5496d2d26d716.png" Reference="FzPfEAG3l0KwKxqQEPE9qQ/gwyQhYaHrEe2NaDYRzWcbw" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='S4D(1)/200 Actual VS Budget (By cost Center)' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
-                  </uix:NTypeInto.Target>
-                  <uix:NTypeInto.VerifyOptions>
-                    <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
-                      <uix:VerifyExecutionTypeIntoOptions.Retry>
-                        <InArgument x:TypeArguments="x:Boolean" />
-                      </uix:VerifyExecutionTypeIntoOptions.Retry>
-                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
-                        <InArgument x:TypeArguments="x:Double" />
-                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
-                    </uix:VerifyExecutionTypeIntoOptions>
-                  </uix:NTypeInto.VerifyOptions>
-                </uix:NTypeInto>
-                <uix:NCheck Action="Check" DisplayName="Check/Uncheck 'Include CO Allocation D…'" sap:VirtualizedContainerService.HintSize="382.4,194.4" sap2010:WorkflowViewState.IdRef="NCheck_1" ScopeIdentifier="9189f9b0-8c0b-4398-bd6e-6f1af062b562" Version="V4">
-                  <uix:NCheck.Target>
-                    <uix:TargetAnchorable ContentHash="8O1UrcMZnUakFRAhWCYRPA" DesignTimeRectangle="66, 1289, 494, 31" DesignTimeScaleFactor="1.25" ElementType="CheckBox" FullSelectorArgument="&lt;sap id='usr/chkP_SETTLE' /&gt;" Guid="4f7ea634-4422-4bcb-87da-57114cb0d632" InformativeScreenshot="2313560cb06ab005c6c343dc507cc6ef.png" Reference="FzPfEAG3l0KwKxqQEPE9qQ/wSInrcIKPUSvAqoGzKTQ7Q" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='S4D(1)/200 Actual VS Budget (By cost Center)' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
-                  </uix:NCheck.Target>
-                </uix:NCheck>
-                <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="382.4,161.6" sap2010:WorkflowViewState.IdRef="SendHotkey_2" Key="f8" KeyModifiers="None" SpecialKey="True">
-                  <ui:SendHotkey.Target>
-                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="1ab5ff79-3e4d-4dae-965e-d31251903dcc">
-                      <ui:Target.TimeoutMS>
-                        <InArgument x:TypeArguments="x:Int32" />
-                      </ui:Target.TimeoutMS>
-                      <ui:Target.WaitForReady>
-                        <InArgument x:TypeArguments="ui:WaitForReady" />
-                      </ui:Target.WaitForReady>
-                    </ui:Target>
-                  </ui:SendHotkey.Target>
-                </ui:SendHotkey>
-              </Sequence>
-            </ActivityAction>
-          </uix:NApplicationCard.Body>
-          <uix:NApplicationCard.TargetApp>
-            <uix:TargetApp Area="-9, -9, 2578, 1398" ContentHash="-F9aHjwalEGAn5JkdLL1xw" FilePath="C:\Program Files (x86)\SAP\FrontEnd\SAPgui\saplogon.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAKGSURBVFhH7ZXfa1JRHMCP3hVB1FAKaqS7NI1gex1U/rhXljPoh1BtowbRqpcRRG1LvdfqPRfVqxRNW2NOh8OtoL0YVKN/wP0BgwW1mo4p6tVx6nvxFOgcbXov+XA/8HkS7vl4zvneixQUFBQUFKRDTe1SU7v3UGBTg0iRNISovc2ovdfdZfNGONDbAHIsH2ZIHkL7O0yo837QBz8IIP7PChAXPWrrp0leQwWKcSHdSecxklaiQQKLrDcc05suGlRUk4qkldjXfgp1jgR8Nj4sgFhaq8ZUusFwoXib/bqeJJXoOm03goZzA3cM/U9iL66OvhNALKV9j99i+8PpUmz1OPFY542OW+VxIqlM/kMynYuvrufii0s/lz4lljc+JpaxlD6d/oId3inMclUD8xA3STNXdCSpnFRG+JVM57EcroJzC4vY+SCILSPj1QLzcOfGdSecbQiVX7m/yBkY+5zA3cN+bL43hhluqvKICywfierNl1pVamqLOkDywPU8XlnL4tmFBD7rfonNQ2PVdq5o9YTmDfaBFpKxNVIHrqQgDnbu8qPX2CTunCdUGSfeuZjRcePfcSIQmIMHZ2FIcvDPi9+SGVyP4rH+iWO5TXFZho8EaGvv9uJEvq/lur/+SNtn38fP3PUFooPPZwqDz2ZwrZ7ng9g0FCA7V3a04s69goGgkUpNVt8GGq0WaTRa1HyYVnX0eketrgnB6nqDa9Y9gVkeXinlA1GEAYm0WnpaYCDIyjtExk9dgfFMzhkcNw+SpWpDpsAs7GSo7jgRGQIzEOenLT2HyBL1IXFgFgbEDwNxpOY7twl40PELtxl4+DDoqkf4QlyjrX0HdjStCgoKCgoKMoDQb0L04V6A4GiHAAAAAElFTkSuQmCC" InformativeScreenshot="50641504cc812b9736c746e8a49bb68b.png" Reference="FzPfEAG3l0KwKxqQEPE9qQ/Dl25rn6pa0-AkJAeZp3f2Q" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='S4D(1)/200 Actual Sales and Cost by Category' /&gt;" Title="S4D(1)/200 Actual Sales and Cost by Category" Version="V1" />
-          </uix:NApplicationCard.TargetApp>
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-        </uix:NApplicationCard>
-        <uix:NCheckState DisplayName="Check App State 'Button Subtotals... (Ct…'" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="492.8,332.8" sap2010:WorkflowViewState.IdRef="NCheckState_2" IsLoose="True" Timeout="300" Version="V4">
-          <uix:NCheckState.IfExists>
-            <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="449.6,91.2" sap2010:WorkflowViewState.IdRef="Sequence_33">
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-            </Sequence>
-          </uix:NCheckState.IfExists>
-          <uix:NCheckState.IfNotExists>
-            <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="449.6,91.2" sap2010:WorkflowViewState.IdRef="Sequence_34">
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-            </Sequence>
-          </uix:NCheckState.IfNotExists>
-          <uix:NCheckState.Target>
-            <uix:TargetAnchorable ContentHash="4r8Ico4lqE-iKSA4KH6Wcw" DesignTimeRectangle="219, 178, 28, 32" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;sap id='tbar[1]/btn[42]' /&gt;" Guid="0a1597e5-3508-4c62-a79c-df3309f32054" InformativeScreenshot="c9e381a940f0fe3a05c412557fdc7c47.png" Reference="FzPfEAG3l0KwKxqQEPE9qQ/17cGcN6BSE2E3l19rSNTtQ" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='S4D(1)/200 Actual VS Budget (By cost Center)' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
-          </uix:NCheckState.Target>
-        </uix:NCheckState>
-      </Sequence>
-      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="S4D(1)200 Actual VS Budget (By cost Center)" sap:VirtualizedContainerService.HintSize="617.6,3620.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" ScopeGuid="884486ef-ee1d-478b-8feb-a95938618530" Version="V2">
-        <uix:NApplicationCard.Body>
-          <ActivityAction x:TypeArguments="x:Object">
-            <ActivityAction.Argument>
-              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
-            </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="483.2,3257.6" sap2010:WorkflowViewState.IdRef="Sequence_30">
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-              <Sequence DisplayName="Ungroup" sap:VirtualizedContainerService.HintSize="449.6,988.8" sap2010:WorkflowViewState.IdRef="Sequence_45">
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
-                <uix:NClick ActivateBefore="True" ClickType="Single" CursorMotionType="Smooth" DelayAfter="2" DisplayName="Click 'Button Subtotals... (Ct…'" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="884486ef-ee1d-478b-8feb-a95938618530" Version="V4">
-                  <uix:NClick.Target>
-                    <uix:TargetAnchorable ContentHash="4r8Ico4lqE-iKSA4KH6Wcw" DesignTimeRectangle="219, 178, 28, 32" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;sap id='tbar[1]/btn[42]' /&gt;" Guid="0a1597e5-3508-4c62-a79c-df3309f32054" InformativeScreenshot="c9e381a940f0fe3a05c412557fdc7c47.png" Reference="FzPfEAG3l0KwKxqQEPE9qQ/17cGcN6BSE2E3l19rSNTtQ" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='S4D(1)/200 Actual VS Budget (By cost Center)' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
-                  </uix:NClick.Target>
-                  <uix:NClick.VerifyOptions>
-                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                      <uix:VerifyExecutionOptions.Retry>
-                        <InArgument x:TypeArguments="x:Boolean" />
-                      </uix:VerifyExecutionOptions.Retry>
-                      <uix:VerifyExecutionOptions.Timeout>
-                        <InArgument x:TypeArguments="x:Double" />
-                      </uix:VerifyExecutionOptions.Timeout>
-                    </uix:VerifyExecutionOptions>
-                  </uix:NClick.VerifyOptions>
-                </uix:NClick>
-                <uix:NClick ActivateBefore="True" ClickType="Single" CursorMotionType="Smooth" DisplayName="Click 'X'" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_16" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="884486ef-ee1d-478b-8feb-a95938618530" Version="V4">
-                  <uix:NClick.Target>
-                    <uix:TargetAnchorable ContentHash="gBB-xy4-dkCERHBbVeVgcQ" DesignTimeRectangle="347, 163, 36, 27" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;sap colName='SUBTOT' id='usr/subSUB_CONFIGURATION:SAPLSALV_CUL_GROUPING_CRITERIA:0610/cntlCONTAINER2_SORT/shellcont/shell' tableRow='0' /&gt;" Guid="987a3b85-b95e-4694-b3ae-f88173015e8d" InformativeScreenshot="0504dd0ec979abf0509b0e87f5e108d7.png" Reference="FzPfEAG3l0KwKxqQEPE9qQ/WspfSU7AME2eqmXS_M_Akw" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='S4D(1)/200 Sort Order' idx='*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
-                  </uix:NClick.Target>
-                  <uix:NClick.VerifyOptions>
-                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                      <uix:VerifyExecutionOptions.Retry>
-                        <InArgument x:TypeArguments="x:Boolean" />
-                      </uix:VerifyExecutionOptions.Retry>
-                      <uix:VerifyExecutionOptions.Timeout>
-                        <InArgument x:TypeArguments="x:Double" />
-                      </uix:VerifyExecutionOptions.Timeout>
-                    </uix:VerifyExecutionOptions>
-                  </uix:NClick.VerifyOptions>
-                </uix:NClick>
-                <uix:NClick ActivateBefore="True" ClickType="Single" CursorMotionType="Smooth" DisplayName="Click 'X(1)'" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_17" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="884486ef-ee1d-478b-8feb-a95938618530" Version="V4">
-                  <uix:NClick.Target>
-                    <uix:TargetAnchorable ContentHash="4xYMVYsmwEqBFyUWPCVYUg" DesignTimeRectangle="347, 190, 36, 27" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;sap colName='SUBTOT' id='usr/subSUB_CONFIGURATION:SAPLSALV_CUL_GROUPING_CRITERIA:0610/cntlCONTAINER2_SORT/shellcont/shell' tableRow='1' /&gt;" Guid="ca93ae7f-524b-442e-9792-45eda77db95c" InformativeScreenshot="d7d79a49680c3cb04d2453326bf44495.png" Reference="FzPfEAG3l0KwKxqQEPE9qQ/-1grwxE0SE68LqQ7cp7IwA" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='S4D(1)/200 Sort Order' idx='*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
-                  </uix:NClick.Target>
-                  <uix:NClick.VerifyOptions>
-                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                      <uix:VerifyExecutionOptions.Retry>
-                        <InArgument x:TypeArguments="x:Boolean" />
-                      </uix:VerifyExecutionOptions.Retry>
-                      <uix:VerifyExecutionOptions.Timeout>
-                        <InArgument x:TypeArguments="x:Double" />
-                      </uix:VerifyExecutionOptions.Timeout>
-                    </uix:VerifyExecutionOptions>
-                  </uix:NClick.VerifyOptions>
-                </uix:NClick>
-                <uix:NClick ActivateBefore="True" ClickType="Single" CursorMotionType="Smooth" DelayAfter="2" DisplayName="Click 'Button Adopt (Enter)'" sap:VirtualizedContainerService.HintSize="416,218.4" sap2010:WorkflowViewState.IdRef="NClick_19" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="884486ef-ee1d-478b-8feb-a95938618530" Version="V4">
-                  <uix:NClick.Target>
-                    <uix:TargetAnchorable ContentHash="oH8WXdubY0-tht3MEO9T1Q" DesignTimeRectangle="1133, 615, 31, 31" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;sap id='tbar[0]/btn[0]' /&gt;" Guid="f65e3b33-cf26-42bd-ac69-feb0ab6686c1" InformativeScreenshot="6d89d56390c21fd527fe1c2cb1e573ad.png" Reference="FzPfEAG3l0KwKxqQEPE9qQ/u3LbPdKFOEKvyzCDUb3EEQ" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='S4D(1)/200 Sort Order' idx='*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
-                      <uix:TargetAnchorable.PointOffset>
-                        <uix:PointOffset Position="BottomRight" />
-                      </uix:TargetAnchorable.PointOffset>
-                    </uix:TargetAnchorable>
-                  </uix:NClick.Target>
-                  <uix:NClick.VerifyOptions>
-                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                      <uix:VerifyExecutionOptions.Retry>
-                        <InArgument x:TypeArguments="x:Boolean" />
-                      </uix:VerifyExecutionOptions.Retry>
-                      <uix:VerifyExecutionOptions.Timeout>
-                        <InArgument x:TypeArguments="x:Double" />
-                      </uix:VerifyExecutionOptions.Timeout>
-                    </uix:VerifyExecutionOptions>
-                  </uix:NClick.VerifyOptions>
-                </uix:NClick>
-              </Sequence>
-              <Sequence DisplayName="Export to excel" sap:VirtualizedContainerService.HintSize="449.6,2208.8" sap2010:WorkflowViewState.IdRef="Sequence_40">
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
-                <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" Key="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="416,168.8" sap2010:WorkflowViewState.IdRef="SendHotkey_5" KeyModifiers="Alt">
-                  <ui:SendHotkey.Target>
-                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="7df8c836-86c5-4365-b4ab-2fe65c7edcb9">
-                      <ui:Target.TimeoutMS>
-                        <InArgument x:TypeArguments="x:Int32" />
-                      </ui:Target.TimeoutMS>
-                      <ui:Target.WaitForReady>
-                        <InArgument x:TypeArguments="ui:WaitForReady" />
-                      </ui:Target.WaitForReady>
-                    </ui:Target>
-                  </ui:SendHotkey.Target>
-                </ui:SendHotkey>
-                <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="416,168.8" sap2010:WorkflowViewState.IdRef="SendHotkey_6" Key="ea" KeyModifiers="None">
-                  <ui:SendHotkey.Target>
-                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="152ce368-87b6-4c8e-90b2-2ad21ec5e550">
-                      <ui:Target.TimeoutMS>
-                        <InArgument x:TypeArguments="x:Int32" />
-                      </ui:Target.TimeoutMS>
-                      <ui:Target.WaitForReady>
-                        <InArgument x:TypeArguments="ui:WaitForReady" />
-                      </ui:Target.WaitForReady>
-                    </ui:Target>
-                  </ui:SendHotkey.Target>
-                </ui:SendHotkey>
-                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Button Continue (Enter)'" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="884486ef-ee1d-478b-8feb-a95938618530" Version="V4">
-                  <uix:NClick.Target>
-                    <uix:TargetAnchorable ContentHash="Q-TuXG2MqEuXNeqLMObuOQ" DesignTimeRectangle="688, 275, 31, 31" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;sap id='tbar[0]/btn[0]' /&gt;" Guid="3e1ec8ee-ab06-42f2-94ee-607f0c4df416" InformativeScreenshot="e3cea51bd014c36b3053b23161314007.png" Reference="FzPfEAG3l0KwKxqQEPE9qQ/kE7HbFfIgUqezRJ4FG49-w" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='S4D(1)/200 Select Spreadsheet' idx='*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
-                  </uix:NClick.Target>
-                  <uix:NClick.VerifyOptions>
-                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                      <uix:VerifyExecutionOptions.Retry>
-                        <InArgument x:TypeArguments="x:Boolean" />
-                      </uix:VerifyExecutionOptions.Retry>
-                      <uix:VerifyExecutionOptions.Timeout>
-                        <InArgument x:TypeArguments="x:Double" />
-                      </uix:VerifyExecutionOptions.Timeout>
-                    </uix:VerifyExecutionOptions>
-                  </uix:NClick.VerifyOptions>
-                </uix:NClick>
-                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'CTEMP'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="416,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_6" ScopeIdentifier="884486ef-ee1d-478b-8feb-a95938618530" Text="C:\Users\kpi\Documents\UiPath\POC_Reconcile_KPC\Data\Input" Version="V4">
-                  <uix:NTypeInto.Target>
-                    <uix:TargetAnchorable ContentHash="jVaIaN-U_0-7Dme6PbRACA" DesignTimeRectangle="187, 48, 794, 31" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;sap id='usr/ctxtDY_PATH' /&gt;" Guid="a08af3e1-ab57-4424-9b1d-18fef51881d3" InformativeScreenshot="4700956158235d89cdea250720e32841.png" Reference="FzPfEAG3l0KwKxqQEPE9qQ/YqaYi61k5k-wCt1I-tWkMg" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='S4D(1)/200 Save File' idx='*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
-                  </uix:NTypeInto.Target>
-                </uix:NTypeInto>
-                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'EXPORT.XLSX'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="416,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_7" ScopeIdentifier="884486ef-ee1d-478b-8feb-a95938618530" Text="ZFCORP01_COM_S4.xlsx" Version="V4">
-                  <uix:NTypeInto.Target>
-                    <uix:TargetAnchorable ContentHash="n6_PpnPF6UW7YTVQhBiMSw" DesignTimeRectangle="187, 82, 794, 31" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;sap id='usr/ctxtDY_FILENAME' /&gt;" Guid="8cad1550-008c-4ade-93cd-2fc7ef58fc23" InformativeScreenshot="fd39411766c482afade7890dfe280d2a.png" Reference="FzPfEAG3l0KwKxqQEPE9qQ/2-JI8NsuQUmMntzHrcL7vQ" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='S4D(1)/200 Save File' idx='*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
-                  </uix:NTypeInto.Target>
-                </uix:NTypeInto>
-                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Generate'" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="884486ef-ee1d-478b-8feb-a95938618530" Version="V4">
-                  <uix:NClick.Target>
-                    <uix:TargetAnchorable ContentHash="7qHOj3k8XUWqs2EhIYRd7Q" DesignTimeRectangle="777, 139, 97, 31" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;sap id='tbar[0]/btn[0]' /&gt;" Guid="ecd0da29-24eb-4bcd-b96e-80ba2292e616" InformativeScreenshot="9cdddacaad54032ec35b2eefe4904008.png" Reference="FzPfEAG3l0KwKxqQEPE9qQ/qNIqzVXpd02Vighmqhx71w" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='S4D(1)/200 Save File' idx='*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
-                  </uix:NClick.Target>
-                  <uix:NClick.VerifyOptions>
-                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                      <uix:VerifyExecutionOptions.Retry>
-                        <InArgument x:TypeArguments="x:Boolean" />
-                      </uix:VerifyExecutionOptions.Retry>
-                      <uix:VerifyExecutionOptions.Timeout>
-                        <InArgument x:TypeArguments="x:Double" />
-                      </uix:VerifyExecutionOptions.Timeout>
-                    </uix:VerifyExecutionOptions>
-                  </uix:NClick.VerifyOptions>
-                </uix:NClick>
-                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'saplogon.exe SAP GUI Se…'" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="884486ef-ee1d-478b-8feb-a95938618530" Version="V4">
-                  <uix:NClick.Target>
-                    <uix:TargetAnchorable ContentHash="i3DPqQAr9UmdXBPKCMrwlg" DesignTimeRectangle="30, 362, 123, 43" DesignTimeScaleFactor="1.25" Guid="11a23942-bc97-432d-9fbf-68c601be03b2" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHsAAAArCAYAAABYSfeIAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAMiSURBVHhe7dzPaxNBFMDx/DP5E3LIOX9HyaUUQT1KD4IKEvTkeqhUrLZYhUoQxUvwoDcpeih4qKgEqqRQQ0TTUFNN2+xz387M7s707W4QoTuz7/BFmuyP0s++1+jBymB0CFw5YuwSFWL/7j+CB8tXYX7+HOdQaIq2Gvad25fh+ZMb4E++ABz1OAdCSzRFWw374oXzMNpdB/9oD2D6i3MgtERTtCWx4fgbwPgN50KBZTb2yYA+kbOvwDIT2z/epU/krAsts7EnnwEOXnEOhJap2PuIPd4EGL3gHAgt0ZTEHvYegn/wGmC4wTkQWqIpY5cgxi5RjmN74NUqUKk0oEN+Xa4sx1Z4QbU56Ka+z9iY3dhbc1BH6DAKkLGT2Y3dboTQC82q+LNtHsPYyazG7jQlnJrw5qJxDGMnsxh7ERYi4DTE2bC7wYaoh6/Lag3w2l78fgs3RxW8rfic1HumPnhnn73YaoXL1S1AzFWej63Oo4quJe9Vb8UPQPLzgnZP4/sqUtZiRytcvUZOVA52BBZMbXKScdLD19V5yS0ijhGoVbEREq/TW6AYWYpN/PDJtZqNraZam1iZvilOXzt82IL7i+OM65N/DTz77MSWqzKteIVmY4vtkDKFxurWJ1Y8bOF95HYQ96QewuJkJbZAyij6Yf8/bA01fM+4Jt5Tgy9eFmLL6SFXpXwvBdf8evY1jsVTq1a4dmzw/XS0lV687MM2J85ITb1Aysae/QOaKLx2LfhQFl1fFn5P8sNaQX9fY9ZhZ65eTD4MYvJysIPUBFOZ6zg+Vn8I4o2S/hAWIcuws1a4KrnK87GxvH9UiVKbILHCVfpGKWbWTTb371mHHU3fDFHnlzme7BKVif3j61pwwEuAn2ucA6ElmpLY33dWwR89I0/k7Ast0ZTE7ndXYMrYzoSWaEpi7326C9N9xnYltERTEru3vcTYDoWWaEpi77y/BSfDp+SJnH2hJZqS2B/e3oRxfwP+9Fc4B0JLND2FfW/pCqwuX4Ltzevw8V2LcyC0RFO01bAng8ewfv8a+Z+wcPaGpmirYXPliLFLFGOXpkP4C7h+7JQZtVZgAAAAAElFTkSuQmCC" InformativeScreenshot="99ba7dec200367c87dde0953b036ba4b.png" Reference="FzPfEAG3l0KwKxqQEPE9qQ/Qx_wovfSe02seVeWbjkXXA" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='SAP GUI Security' idx='*' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V4" Visibility="Interactive" />
-                  </uix:NClick.Target>
-                  <uix:NClick.VerifyOptions>
-                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                      <uix:VerifyExecutionOptions.Retry>
-                        <InArgument x:TypeArguments="x:Boolean" />
-                      </uix:VerifyExecutionOptions.Retry>
-                      <uix:VerifyExecutionOptions.Timeout>
-                        <InArgument x:TypeArguments="x:Double" />
-                      </uix:VerifyExecutionOptions.Timeout>
-                    </uix:VerifyExecutionOptions>
-                  </uix:NClick.VerifyOptions>
-                </uix:NClick>
-                <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="5" DisplayName="Click 'saplogon.exe SAP GUI Se…(1)'" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="884486ef-ee1d-478b-8feb-a95938618530" Version="V4">
-                  <uix:NClick.Target>
-                    <uix:TargetAnchorable ContentHash="0otoxuiHUEai-8w9PTwj8Q" DesignTimeRectangle="28, 339, 125, 42" DesignTimeScaleFactor="1.25" Guid="498ce0d5-c276-441a-b1fe-eb5150828cf1" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAH0AAAAqCAYAAACeC1RqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAMiSURBVHhe7ZxBaxNBFMfzZfIRcsg5n6PkUoqgHqUHQQUJejIeKhWrLVahEkTxEjzoTYoeCh4qKoFWUqghommoqaZt9jlvZ2Z3Z5ydXUTozuw7/Ci7O/tm6e+9fzY9tDIcHwFRLkh6CVGk/xo8ggfLV2F+/hzhEegU3Rql37l9GZ4/uQHBdBfguE94ALpEp+jWKP3ihfMw3luH4HgfYPaT8AB0iU7RrVU6nHwFmLwhfIC5zCf9dGguQLgHc5lLenCyZy5AOAe6zCd9+hng8BXhAegyU/oBSp9sAoxfEB6ALtGpVfqo/xCCw9cAow3CA9AlOiXpJYKkl5CSSG9Du1aBSqUBXeNxufBEupTIqM1BL/U6SUf8kL41B3UUHmISSdKT+CG90wiFLzSr/GdHX0PSk3ghvdsUAuXENxe1NSQ9iQfSF2EhEp0mM5/0HkuMenheUGtAu9OOr7cwSarQ3orvSd0ztQHPHvely2gXkc7F6BGfLV3eZyKqJfaqt+JGSL5PKHtqz1UknJceRbs8Z5ywDOmRODbFycnGyQ/Py/uSqcLXcLlVnhCJ8+ZUKAaOSzdIMMatXbqccmWCBWpy/F07bDq2P1+n1Td+fTx73JYuIjSNOFrt0nlapEylFunqBPOmC/cRacH3NDVjcXBaOpdlIfql/z/pitzwmlYT91QaoHg4LF1MkzFCxbUUyfpx/nhH4imW0a6sZc/TVaK+eLgrXZ9ADZkCXJZdev4XOU5Yu8Ze3qL6gvCZxEtdQT/PEWelWyMZEU3BJzFDOkNOtAk9puO1ajPECZPejEXAUem2aJckIz5bOpL1x5kImQyJaJeoCVNMnJ104t9xVno0jTkw3V9maNJLSC7p37+ssYUvAX6sER6ALtGpVfq3nVUIxs+MBQj3QJfo1Cp90FuBGUn3BnSJTq3S9z/dhdkBSfcFdIlOrdL720sk3SPQJTq1St95fwtOR0+NBQj3QJfo1Cr9w9ubMBlswO/BCuEB6BKdpkq/t3QFVpcvwfbmdfj4rkV4ALpEp+jWKH06fAzr968Z/1kN4S7oFN0apRPlgKSXjiP4A+QqV+T8d2ODAAAAAElFTkSuQmCC" InformativeScreenshot="33a069db46d61c39da358e449c33b5ae.png" Reference="FzPfEAG3l0KwKxqQEPE9qQ/xDJyP8YSeker9u-6MZsmTA" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='SAP GUI Security' idx='*' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V4" Visibility="Interactive" />
-                  </uix:NClick.Target>
-                  <uix:NClick.VerifyOptions>
-                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                      <uix:VerifyExecutionOptions.Retry>
-                        <InArgument x:TypeArguments="x:Boolean" />
-                      </uix:VerifyExecutionOptions.Retry>
-                      <uix:VerifyExecutionOptions.Timeout>
-                        <InArgument x:TypeArguments="x:Double" />
-                      </uix:VerifyExecutionOptions.Timeout>
-                    </uix:VerifyExecutionOptions>
-                  </uix:NClick.VerifyOptions>
-                </uix:NClick>
-                <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="416,166.4" sap2010:WorkflowViewState.IdRef="KillProcess_3" ProcessName="excel" />
-                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Button Back (F3)'" sap:VirtualizedContainerService.HintSize="416,218.4" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="884486ef-ee1d-478b-8feb-a95938618530" Version="V4">
-                  <uix:NClick.Target>
-                    <uix:TargetAnchorable ContentHash="6GB5kE5NbEaSIVxuS6JWMQ" DesignTimeRectangle="416, 71, 33, 33" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;sap id='tbar[0]/btn[15]' /&gt;" Guid="99409845-7f0b-4360-944f-752d739b3e79" InformativeScreenshot="65c8a8c4eddb47c3944f08df0e0f0b7e.png" Reference="FzPfEAG3l0KwKxqQEPE9qQ/YxFC6hwezUOqJtH612asLA" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='S4D(1)/200 Actual VS Budget (By cost Center)' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
-                  </uix:NClick.Target>
-                  <uix:NClick.VerifyOptions>
-                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                      <uix:VerifyExecutionOptions.Retry>
-                        <InArgument x:TypeArguments="x:Boolean" />
-                      </uix:VerifyExecutionOptions.Retry>
-                      <uix:VerifyExecutionOptions.Timeout>
-                        <InArgument x:TypeArguments="x:Double" />
-                      </uix:VerifyExecutionOptions.Timeout>
-                    </uix:VerifyExecutionOptions>
-                  </uix:NClick.VerifyOptions>
-                </uix:NClick>
-              </Sequence>
-            </Sequence>
-          </ActivityAction>
-        </uix:NApplicationCard.Body>
-        <uix:NApplicationCard.TargetApp>
-          <uix:TargetApp Area="-9, -9, 2578, 1398" ContentHash="cxYssqOZ-0OMy9lwX-BSPg" FilePath="C:\Program Files (x86)\SAP\FrontEnd\SAPgui\saplogon.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAKGSURBVFhH7ZXfa1JRHMCP3hVB1FAKaqS7NI1gex1U/rhXljPoh1BtowbRqpcRRG1LvdfqPRfVqxRNW2NOh8OtoL0YVKN/wP0BgwW1mo4p6tVx6nvxFOgcbXov+XA/8HkS7vl4zvneixQUFBQUFKRDTe1SU7v3UGBTg0iRNISovc2ovdfdZfNGONDbAHIsH2ZIHkL7O0yo837QBz8IIP7PChAXPWrrp0leQwWKcSHdSecxklaiQQKLrDcc05suGlRUk4qkldjXfgp1jgR8Nj4sgFhaq8ZUusFwoXib/bqeJJXoOm03goZzA3cM/U9iL66OvhNALKV9j99i+8PpUmz1OPFY542OW+VxIqlM/kMynYuvrufii0s/lz4lljc+JpaxlD6d/oId3inMclUD8xA3STNXdCSpnFRG+JVM57EcroJzC4vY+SCILSPj1QLzcOfGdSecbQiVX7m/yBkY+5zA3cN+bL43hhluqvKICywfierNl1pVamqLOkDywPU8XlnL4tmFBD7rfonNQ2PVdq5o9YTmDfaBFpKxNVIHrqQgDnbu8qPX2CTunCdUGSfeuZjRcePfcSIQmIMHZ2FIcvDPi9+SGVyP4rH+iWO5TXFZho8EaGvv9uJEvq/lur/+SNtn38fP3PUFooPPZwqDz2ZwrZ7ng9g0FCA7V3a04s69goGgkUpNVt8GGq0WaTRa1HyYVnX0eketrgnB6nqDa9Y9gVkeXinlA1GEAYm0WnpaYCDIyjtExk9dgfFMzhkcNw+SpWpDpsAs7GSo7jgRGQIzEOenLT2HyBL1IXFgFgbEDwNxpOY7twl40PELtxl4+DDoqkf4QlyjrX0HdjStCgoKCgoKMoDQb0L04V6A4GiHAAAAAElFTkSuQmCC" InformativeScreenshot="bb48beb92ab6828dc7b8347b01289145.png" Reference="FzPfEAG3l0KwKxqQEPE9qQ/clqde0vuVkizQMBNoiFohA" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='S4D(1)/200 Actual VS Budget (By cost Center)' /&gt;" Title="S4D(1)/200 Actual VS Budget (By cost Center)" Version="V1" />
-        </uix:NApplicationCard.TargetApp>
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-      </uix:NApplicationCard>
-      <Sequence DisplayName="FinancialStatement" sap:VirtualizedContainerService.HintSize="617.6,6533.6" sap2010:WorkflowViewState.IdRef="Sequence_41">
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="S4D(1)200 Actual VS Budget (By cost Center)" sap:VirtualizedContainerService.HintSize="584,6450.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" ScopeGuid="9f3060da-5954-43e2-b790-a76820b9adcf" Version="V2">
-          <uix:NApplicationCard.Body>
-            <ActivityAction x:TypeArguments="x:Object">
-              <ActivityAction.Argument>
-                <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
-              </ActivityAction.Argument>
-              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="550.4,6136" sap2010:WorkflowViewState.IdRef="Sequence_42">
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
-                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'OkCodeField okcd'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="516.8,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="9f3060da-5954-43e2-b790-a76820b9adcf" Text="S_ALR_87012284[k(Enter)]" Version="V4">
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'OkCodeField okcd'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382.4,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="9f3060da-5954-43e2-b790-a76820b9adcf" Text="S_ALR_87012284[k(Enter)]" Version="V4">
                   <uix:NTypeInto.Target>
                     <uix:TargetAnchorable ContentHash="CLWdzzPrYUyzisRsv06mCA" DesignTimeRectangle="80, 73, 221, 31" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;sap id='tbar[0]/okcd' /&gt;" Guid="5f33fabd-71f1-4ac3-910e-8f83f277b215" InformativeScreenshot="49d4e5bfead70f07a96e02705f597fbf.png" Reference="FzPfEAG3l0KwKxqQEPE9qQ/8FGDLukjwUu_AEzezeikKQ" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='S4D(1)/200 Actual VS Budget (By cost Center)' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                   </uix:NTypeInto.Target>
                 </uix:NTypeInto>
-                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'CTextField Chart of Acc…'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="516.8,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_9" ScopeIdentifier="9f3060da-5954-43e2-b790-a76820b9adcf" Text="1000" Version="V4">
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'CTextField Chart of Acc…'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382.4,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_9" ScopeIdentifier="9f3060da-5954-43e2-b790-a76820b9adcf" Text="1000" Version="V4">
                   <uix:NTypeInto.Target>
                     <uix:TargetAnchorable ContentHash="jMjmsMgz5UyU5KEnPoYcNQ" DesignTimeRectangle="546, 265, 104, 31" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;sap id='usr/ctxtSD_KTOPL-LOW' /&gt;" Guid="efb0b0e1-858f-4e35-8344-c358dbdc2940" InformativeScreenshot="eb7e5a30a4aaab58e0cf0257ad4d4934.png" Reference="FzPfEAG3l0KwKxqQEPE9qQ/GNas5T9VN0SGUVHFS6khxg" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='S4D(1)/200 Financial Statements' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                   </uix:NTypeInto.Target>
@@ -574,17 +208,17 @@
                     </uix:VerifyExecutionTypeIntoOptions>
                   </uix:NTypeInto.VerifyOptions>
                 </uix:NTypeInto>
-                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '1000'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="516.8,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_10" ScopeIdentifier="9f3060da-5954-43e2-b790-a76820b9adcf" Text="1000" Version="V4">
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '1000'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382.4,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_10" ScopeIdentifier="9f3060da-5954-43e2-b790-a76820b9adcf" Text="1000" Version="V4">
                   <uix:NTypeInto.Target>
                     <uix:TargetAnchorable ContentHash="-PYC1WM-ckeZwwAjnLn-iw" DesignTimeRectangle="546, 333, 74, 31" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;sap id='usr/ctxtSD_BUKRS-LOW' /&gt;" Guid="38e00a2f-3318-4fcd-9390-45e8b5ac1f76" InformativeScreenshot="91519ad680bfa48ab846431e5c0d47a2.png" Reference="FzPfEAG3l0KwKxqQEPE9qQ/Y2YBgrD7Ukq-oJrY7WuVWw" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='S4D(1)/200 Financial Statements' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                   </uix:NTypeInto.Target>
                 </uix:NTypeInto>
-                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'CTextField Business Area'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="516.8,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_12" ScopeIdentifier="9f3060da-5954-43e2-b790-a76820b9adcf" Text="1103" Version="V4">
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'CTextField Business Area'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382.4,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_12" ScopeIdentifier="9f3060da-5954-43e2-b790-a76820b9adcf" Text="1103" Version="V4">
                   <uix:NTypeInto.Target>
                     <uix:TargetAnchorable ContentHash="G6qHLQAZ5kiKi8hx6Wr-MA" DesignTimeRectangle="546, 605, 74, 31" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;sap id='usr/ctxtSD_GSB_S-LOW' /&gt;" Guid="aca833f4-ef93-4cad-9d92-a7da5c4507af" InformativeScreenshot="aaed064edb53da6176af9a9402d10c6b.png" Reference="FzPfEAG3l0KwKxqQEPE9qQ/EejcrpzoMkuvHvT3rW5v3g" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='S4D(1)/200 Financial Statements' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                   </uix:NTypeInto.Target>
                 </uix:NTypeInto>
-                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Special evaluations'" sap:VirtualizedContainerService.HintSize="516.8,225.6" sap2010:WorkflowViewState.IdRef="NClick_20" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9f3060da-5954-43e2-b790-a76820b9adcf" Version="V4">
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Special evaluations'" sap:VirtualizedContainerService.HintSize="382.4,225.6" sap2010:WorkflowViewState.IdRef="NClick_20" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9f3060da-5954-43e2-b790-a76820b9adcf" Version="V4">
                   <uix:NClick.Target>
                     <uix:TargetAnchorable ContentHash="4boZqbNws0KXEyeS6Ozp_w" DesignTimeRectangle="242, 743, 190, 33" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;sap id='usr/tabsTABSTRIP_TABBL1/tabpUCOM30' /&gt;" Guid="f45c756f-3ac5-4d48-8b2b-f66df83bbe8e" InformativeScreenshot="7d0813e93bf59414e477dc6dc98bd81e.png" Reference="FzPfEAG3l0KwKxqQEPE9qQ/fRCPYDa5Q0Gz4jy7CMOlqA" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='S4D(1)/200 Financial Statements' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                   </uix:NClick.Target>
@@ -599,12 +233,12 @@
                     </uix:VerifyExecutionOptions>
                   </uix:NClick.VerifyOptions>
                 </uix:NClick>
-                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Input(2)'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="516.8,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_22" ScopeIdentifier="9f3060da-5954-43e2-b790-a76820b9adcf" Text="2" Version="V4">
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Input(2)'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382.4,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_22" ScopeIdentifier="9f3060da-5954-43e2-b790-a76820b9adcf" Text="2" Version="V4">
                   <uix:NTypeInto.Target>
                     <uix:TargetAnchorable ContentHash="ZvaW7xtfQk2fQxuTZjf7sA" DesignTimeRectangle="561, 809, 29, 31" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;sap id='usr/tabsTABSTRIP_TABBL1/tabpUCOM30/ssub%_SUBSCREEN_TABBL1:RFBILA00:0030/ctxtBILABTYP' /&gt;" Guid="e4b0021d-2949-4948-a778-3aa15c435166" InformativeScreenshot="1ed4dfe1bf42a57c44692aa482f766c5.png" Reference="FzPfEAG3l0KwKxqQEPE9qQ/mmlGvNleck6nT5BH62FPKQ" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='S4D(1)/200 Financial Statements' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                   </uix:NTypeInto.Target>
                 </uix:NTypeInto>
-                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Further Selections'" sap:VirtualizedContainerService.HintSize="516.8,225.6" sap2010:WorkflowViewState.IdRef="NClick_21" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9f3060da-5954-43e2-b790-a76820b9adcf" Version="V4">
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Further Selections'" sap:VirtualizedContainerService.HintSize="382.4,225.6" sap2010:WorkflowViewState.IdRef="NClick_21" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9f3060da-5954-43e2-b790-a76820b9adcf" Version="V4">
                   <uix:NClick.Target>
                     <uix:TargetAnchorable ContentHash="gS2i1dq3ikuj2PgaGIHi5g" DesignTimeRectangle="38, 743, 203, 33" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;sap id='usr/tabsTABSTRIP_TABBL1/tabpUCOM1' /&gt;" Guid="57bb156c-9869-40d6-8902-7f469f2a9369" InformativeScreenshot="ab4d567de245f4be5f7b648add21d378.png" Reference="FzPfEAG3l0KwKxqQEPE9qQ/xsDJ_6VmBEGeQ-JEnrBqRQ" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='S4D(1)/200 Financial Statements' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                   </uix:NClick.Target>
@@ -619,17 +253,17 @@
                     </uix:VerifyExecutionOptions>
                   </uix:NClick.VerifyOptions>
                 </uix:NClick>
-                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'CTextField Financial St…'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="516.8,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_13" ScopeIdentifier="9f3060da-5954-43e2-b790-a76820b9adcf" Text="PL01" Version="V4">
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'CTextField Financial St…'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382.4,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_13" ScopeIdentifier="9f3060da-5954-43e2-b790-a76820b9adcf" Text="PL01" Version="V4">
                   <uix:NTypeInto.Target>
                     <uix:TargetAnchorable ContentHash="rWR4wwwNFka2H9yTQs9-vA" DesignTimeRectangle="561, 809, 74, 31" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;sap id='usr/tabsTABSTRIP_TABBL1/tabpUCOM1/ssub%_SUBSCREEN_TABBL1:RFBILA00:0001/ctxtBILAVERS' /&gt;" Guid="46278934-07f4-43c8-ab9e-125c5a1b41b8" InformativeScreenshot="43a2a6b05dc5d07f8adf21c24a46c962.png" Reference="FzPfEAG3l0KwKxqQEPE9qQ/R2C7UVuKV063T5vdcZ0Rcw" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='S4D(1)/200 Financial Statements' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                   </uix:NTypeInto.Target>
                 </uix:NTypeInto>
-                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '2024'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="516.8,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_14" ScopeIdentifier="9f3060da-5954-43e2-b790-a76820b9adcf" Text="2024" Version="V4">
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '2024'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382.4,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_14" ScopeIdentifier="9f3060da-5954-43e2-b790-a76820b9adcf" Text="2024" Version="V4">
                   <uix:NTypeInto.Target>
                     <uix:TargetAnchorable ContentHash="iauAVoRhOUiGgV0pOH62wQ" DesignTimeRectangle="561, 843, 74, 31" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;sap id='usr/tabsTABSTRIP_TABBL1/tabpUCOM1/ssub%_SUBSCREEN_TABBL1:RFBILA00:0001/txtBILBJAHR' /&gt;" Guid="71e845f8-13b9-45f5-af4b-f96efe344150" InformativeScreenshot="503c29165b6eb9d2a3f010a4b7dbe124.png" Reference="FzPfEAG3l0KwKxqQEPE9qQ/xFKU7X6kjkmMif4VvwmJJw" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='S4D(1)/200 Financial Statements' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                   </uix:NTypeInto.Target>
                 </uix:NTypeInto>
-                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '2023'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="516.8,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_15" ScopeIdentifier="9f3060da-5954-43e2-b790-a76820b9adcf" Text="2024" Version="V4">
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '2023'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382.4,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_15" ScopeIdentifier="9f3060da-5954-43e2-b790-a76820b9adcf" Text="2024" Version="V4">
                   <uix:NTypeInto.Target>
                     <uix:TargetAnchorable ContentHash="5_pkbx0K-UOqKxMdxexfNg" DesignTimeRectangle="561, 911, 74, 31" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;sap id='usr/tabsTABSTRIP_TABBL1/tabpUCOM1/ssub%_SUBSCREEN_TABBL1:RFBILA00:0001/txtBILVJAHR' /&gt;" Guid="4c5dd7d4-bb39-4a3d-b6eb-d339cf2db712" InformativeScreenshot="2166305b386d8b81129dfcb257819f5d.png" Reference="FzPfEAG3l0KwKxqQEPE9qQ/GO6Dzm-XxE24YfTGjOXZnw" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='S4D(1)/200 Financial Statements' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                   </uix:NTypeInto.Target>
@@ -644,7 +278,7 @@
                     </uix:VerifyExecutionTypeIntoOptions>
                   </uix:NTypeInto.VerifyOptions>
                 </uix:NTypeInto>
-                <ui:ForEach x:TypeArguments="x:Int32" CurrentIndex="{x:Null}" DisplayName="For Each currentNumber" sap:VirtualizedContainerService.HintSize="516.8,3548" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[arrMonth]">
+                <ui:ForEach x:TypeArguments="x:Int32" CurrentIndex="{x:Null}" DisplayName="For Each currentNumber" sap:VirtualizedContainerService.HintSize="382.4,56.8" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[arrMonth]">
                   <ui:ForEach.Body>
                     <ActivityAction x:TypeArguments="x:Int32">
                       <ActivityAction.Argument>
@@ -816,13 +450,383 @@
                       </Sequence>
                     </ActivityAction>
                   </ui:ForEach.Body>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
                 </ui:ForEach>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Button Back (F3)'" sap:VirtualizedContainerService.HintSize="382.4,225.6" sap2010:WorkflowViewState.IdRef="NClick_24" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9f3060da-5954-43e2-b790-a76820b9adcf" Version="V4">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable ContentHash="6GB5kE5NbEaSIVxuS6JWMQ" DesignTimeRectangle="416, 71, 33, 33" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;sap id='tbar[0]/btn[15]' /&gt;" Guid="99409845-7f0b-4360-944f-752d739b3e79" InformativeScreenshot="65c8a8c4eddb47c3944f08df0e0f0b7e.png" Reference="FzPfEAG3l0KwKxqQEPE9qQ/YxFC6hwezUOqJtH612asLA" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='S4D(1)/200 Actual VS Budget (By cost Center)' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                </uix:NClick>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Button Back (F3)'" sap:VirtualizedContainerService.HintSize="382.4,218.4" sap2010:WorkflowViewState.IdRef="NClick_25" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9f3060da-5954-43e2-b790-a76820b9adcf" Version="V4">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable ContentHash="6GB5kE5NbEaSIVxuS6JWMQ" DesignTimeRectangle="416, 71, 33, 33" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;sap id='tbar[0]/btn[15]' /&gt;" Guid="99409845-7f0b-4360-944f-752d739b3e79" InformativeScreenshot="65c8a8c4eddb47c3944f08df0e0f0b7e.png" Reference="FzPfEAG3l0KwKxqQEPE9qQ/YxFC6hwezUOqJtH612asLA" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='S4D(1)/200 Actual VS Budget (By cost Center)' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                </uix:NClick>
               </Sequence>
             </ActivityAction>
           </uix:NApplicationCard.Body>
           <uix:NApplicationCard.TargetApp>
             <uix:TargetApp Area="-9, -9, 2578, 1398" ContentHash="cxYssqOZ-0OMy9lwX-BSPg" FilePath="C:\Program Files (x86)\SAP\FrontEnd\SAPgui\saplogon.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAKGSURBVFhH7ZXfa1JRHMCP3hVB1FAKaqS7NI1gex1U/rhXljPoh1BtowbRqpcRRG1LvdfqPRfVqxRNW2NOh8OtoL0YVKN/wP0BgwW1mo4p6tVx6nvxFOgcbXov+XA/8HkS7vl4zvneixQUFBQUFKRDTe1SU7v3UGBTg0iRNISovc2ovdfdZfNGONDbAHIsH2ZIHkL7O0yo837QBz8IIP7PChAXPWrrp0leQwWKcSHdSecxklaiQQKLrDcc05suGlRUk4qkldjXfgp1jgR8Nj4sgFhaq8ZUusFwoXib/bqeJJXoOm03goZzA3cM/U9iL66OvhNALKV9j99i+8PpUmz1OPFY542OW+VxIqlM/kMynYuvrufii0s/lz4lljc+JpaxlD6d/oId3inMclUD8xA3STNXdCSpnFRG+JVM57EcroJzC4vY+SCILSPj1QLzcOfGdSecbQiVX7m/yBkY+5zA3cN+bL43hhluqvKICywfierNl1pVamqLOkDywPU8XlnL4tmFBD7rfonNQ2PVdq5o9YTmDfaBFpKxNVIHrqQgDnbu8qPX2CTunCdUGSfeuZjRcePfcSIQmIMHZ2FIcvDPi9+SGVyP4rH+iWO5TXFZho8EaGvv9uJEvq/lur/+SNtn38fP3PUFooPPZwqDz2ZwrZ7ng9g0FCA7V3a04s69goGgkUpNVt8GGq0WaTRa1HyYVnX0eketrgnB6nqDa9Y9gVkeXinlA1GEAYm0WnpaYCDIyjtExk9dgfFMzhkcNw+SpWpDpsAs7GSo7jgRGQIzEOenLT2HyBL1IXFgFgbEDwNxpOY7twl40PELtxl4+DDoqkf4QlyjrX0HdjStCgoKCgoKMoDQb0L04V6A4GiHAAAAAElFTkSuQmCC" InformativeScreenshot="bb48beb92ab6828dc7b8347b01289145.png" Reference="FzPfEAG3l0KwKxqQEPE9qQ/clqde0vuVkizQMBNoiFohA" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='S4D(1)/200 Actual VS Budget (By cost Center)' /&gt;" Title="S4D(1)/200 Actual VS Budget (By cost Center)" Version="V1" />
           </uix:NApplicationCard.TargetApp>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </uix:NApplicationCard>
+      </Sequence>
+      <Sequence DisplayName="Export Actual and Budget" sap:VirtualizedContainerService.HintSize="550.4,3568.8" sap2010:WorkflowViewState.IdRef="Sequence_29">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="S4D(1)200 Actual Sales and Cost by Category" sap:VirtualizedContainerService.HintSize="516.8,3485.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Never" ScopeGuid="9189f9b0-8c0b-4398-bd6e-6f1af062b562" Version="V2" WindowResize="Maximize">
+          <uix:NApplicationCard.Body>
+            <ActivityAction x:TypeArguments="x:Object">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="483.2,3171.2" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <Sequence DisplayName="Enter Actual" sap:VirtualizedContainerService.HintSize="449.6,2071.2" sap2010:WorkflowViewState.IdRef="Sequence_46">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'OkCodeField okcd'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="416,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="9189f9b0-8c0b-4398-bd6e-6f1af062b562" Text="ZFCORP01_COM_S4[k(Enter)]" Version="V4">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable ContentHash="3xt59nckSEW58gKYHHn5sQ" DesignTimeRectangle="80, 73, 221, 31" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;sap id='tbar[0]/okcd' /&gt;" Guid="ccd8216e-3c9d-4236-b701-93486e12dcce" InformativeScreenshot="b5653d78ffe94aed587054b687746e8f.png" Reference="FzPfEAG3l0KwKxqQEPE9qQ/VYsRxIiQP0qg9jcJrbcPXA" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='S4D(1)/200 SAP Easy Access' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'CTextField Company Code'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="416,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="9189f9b0-8c0b-4398-bd6e-6f1af062b562" Text="1000" Version="V4">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable ContentHash="MCKM7IIP20m8tC1x1UVpWw" DesignTimeRectangle="546, 231, 104, 31" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;sap id='usr/ctxtS_BUKRS-LOW' /&gt;" Guid="c8da82cd-d4c2-4d56-9cc4-5a7530f0c7c0" InformativeScreenshot="53aa9d84628e97f0cb08b25f067cbb49.png" Reference="FzPfEAG3l0KwKxqQEPE9qQ/MIkunxqQkUeSlEd0NIvXGA" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='S4D(1)/200 Actual Sales and Cost by Category' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                    </uix:NTypeInto.Target>
+                    <uix:NTypeInto.VerifyOptions>
+                      <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      </uix:VerifyExecutionTypeIntoOptions>
+                    </uix:NTypeInto.VerifyOptions>
+                  </uix:NTypeInto>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Local Currency'" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9189f9b0-8c0b-4398-bd6e-6f1af062b562" Version="V4">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable ContentHash="gO37httDoEKxwyqwgPlrDw" DesignTimeRectangle="66, 707, 524, 31" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;sap id='usr/radP_CURCOM' /&gt;" Guid="e6fc2216-b13f-4561-8a75-28018b87beb1" InformativeScreenshot="5a3d33d3ff0a014be3dcca4ff43e84de.png" Reference="FzPfEAG3l0KwKxqQEPE9qQ/W5wWPwznmUGGACjcTQJ3jQ" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='S4D(1)/200 Actual VS Budget (By cost Center)' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '11'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="416,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="9189f9b0-8c0b-4398-bd6e-6f1af062b562" Text="05" Version="V4">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable ContentHash="KdDif_6DzUS3mKjykC5q6g" DesignTimeRectangle="546, 877, 44, 31" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;sap id='usr/txtP_PERIOD' /&gt;" Guid="26410ebc-c6c4-4654-9531-c0e1d520d3b8" InformativeScreenshot="62a9dad2c00fa532a0e2e9a2004a6905.png" Reference="FzPfEAG3l0KwKxqQEPE9qQ/-WzxiioDOUmsdU-CDgxE8g" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='S4D(1)/200 Actual VS Budget (By cost Center)' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                    </uix:NTypeInto.Target>
+                    <uix:NTypeInto.VerifyOptions>
+                      <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      </uix:VerifyExecutionTypeIntoOptions>
+                    </uix:NTypeInto.VerifyOptions>
+                  </uix:NTypeInto>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '11(1)'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="416,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="9189f9b0-8c0b-4398-bd6e-6f1af062b562" Text="09" Version="V4">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable ContentHash="bZPDDyTahEmdfaOA8ofRqg" DesignTimeRectangle="546, 911, 44, 31" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;sap id='usr/txtP_PERIO2' /&gt;" Guid="1ce5b4d0-ef32-4358-9340-22b005514d0a" InformativeScreenshot="bc45e61f8c1ba16bbc6282fcdb90b17c.png" Reference="FzPfEAG3l0KwKxqQEPE9qQ/ESv-e_6L6Ea5toK18nsB6A" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='S4D(1)/200 Actual VS Budget (By cost Center)' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                    </uix:NTypeInto.Target>
+                    <uix:NTypeInto.VerifyOptions>
+                      <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      </uix:VerifyExecutionTypeIntoOptions>
+                    </uix:NTypeInto.VerifyOptions>
+                  </uix:NTypeInto>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '2024'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="416,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="9189f9b0-8c0b-4398-bd6e-6f1af062b562" Text="2024" Version="V4">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable ContentHash="I0s1G9WWNEGr_dCeO0TdIQ" DesignTimeRectangle="546, 945, 74, 31" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;sap id='usr/txtP_GJAHR' /&gt;" Guid="1ee3ad17-187b-4f66-81d4-2c28bd88f32d" InformativeScreenshot="073db2ef0b026f13b9a5496d2d26d716.png" Reference="FzPfEAG3l0KwKxqQEPE9qQ/gwyQhYaHrEe2NaDYRzWcbw" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='S4D(1)/200 Actual VS Budget (By cost Center)' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                    </uix:NTypeInto.Target>
+                    <uix:NTypeInto.VerifyOptions>
+                      <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      </uix:VerifyExecutionTypeIntoOptions>
+                    </uix:NTypeInto.VerifyOptions>
+                  </uix:NTypeInto>
+                  <uix:NCheck Action="Check" DisplayName="Check/Uncheck 'Include CO Allocation D…'" sap:VirtualizedContainerService.HintSize="416,194.4" sap2010:WorkflowViewState.IdRef="NCheck_1" ScopeIdentifier="9189f9b0-8c0b-4398-bd6e-6f1af062b562" Version="V4">
+                    <uix:NCheck.Target>
+                      <uix:TargetAnchorable ContentHash="8O1UrcMZnUakFRAhWCYRPA" DesignTimeRectangle="66, 1289, 494, 31" DesignTimeScaleFactor="1.25" ElementType="CheckBox" FullSelectorArgument="&lt;sap id='usr/chkP_SETTLE' /&gt;" Guid="4f7ea634-4422-4bcb-87da-57114cb0d632" InformativeScreenshot="2313560cb06ab005c6c343dc507cc6ef.png" Reference="FzPfEAG3l0KwKxqQEPE9qQ/wSInrcIKPUSvAqoGzKTQ7Q" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='S4D(1)/200 Actual VS Budget (By cost Center)' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                    </uix:NCheck.Target>
+                  </uix:NCheck>
+                  <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="416,161.6" sap2010:WorkflowViewState.IdRef="SendHotkey_2" Key="f8" KeyModifiers="None" SpecialKey="True">
+                    <ui:SendHotkey.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="1ab5ff79-3e4d-4dae-965e-d31251903dcc">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:SendHotkey.Target>
+                  </ui:SendHotkey>
+                </Sequence>
+                <Sequence DisplayName="Ungroup" sap:VirtualizedContainerService.HintSize="449.6,988.8" sap2010:WorkflowViewState.IdRef="Sequence_45">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" CursorMotionType="Smooth" DelayAfter="2" DisplayName="Click 'Button Subtotals... (Ct…'" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9189f9b0-8c0b-4398-bd6e-6f1af062b562" Timeout="5000" Version="V4">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable ContentHash="4r8Ico4lqE-iKSA4KH6Wcw" DesignTimeRectangle="219, 178, 28, 32" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;sap id='tbar[1]/btn[42]' /&gt;" Guid="0a1597e5-3508-4c62-a79c-df3309f32054" InformativeScreenshot="c9e381a940f0fe3a05c412557fdc7c47.png" Reference="FzPfEAG3l0KwKxqQEPE9qQ/17cGcN6BSE2E3l19rSNTtQ" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='S4D(1)/200 Actual VS Budget (By cost Center)' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" CursorMotionType="Smooth" DisplayName="Click 'X'" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_16" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9189f9b0-8c0b-4398-bd6e-6f1af062b562" Version="V4">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable ContentHash="gBB-xy4-dkCERHBbVeVgcQ" DesignTimeRectangle="347, 163, 36, 27" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;sap colName='SUBTOT' id='usr/subSUB_CONFIGURATION:SAPLSALV_CUL_GROUPING_CRITERIA:0610/cntlCONTAINER2_SORT/shellcont/shell' tableRow='0' /&gt;" Guid="987a3b85-b95e-4694-b3ae-f88173015e8d" InformativeScreenshot="0504dd0ec979abf0509b0e87f5e108d7.png" Reference="FzPfEAG3l0KwKxqQEPE9qQ/WspfSU7AME2eqmXS_M_Akw" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='S4D(1)/200 Sort Order' idx='*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" CursorMotionType="Smooth" DisplayName="Click 'X(1)'" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_17" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9189f9b0-8c0b-4398-bd6e-6f1af062b562" Version="V4">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable ContentHash="4xYMVYsmwEqBFyUWPCVYUg" DesignTimeRectangle="347, 190, 36, 27" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;sap colName='SUBTOT' id='usr/subSUB_CONFIGURATION:SAPLSALV_CUL_GROUPING_CRITERIA:0610/cntlCONTAINER2_SORT/shellcont/shell' tableRow='1' /&gt;" Guid="ca93ae7f-524b-442e-9792-45eda77db95c" InformativeScreenshot="d7d79a49680c3cb04d2453326bf44495.png" Reference="FzPfEAG3l0KwKxqQEPE9qQ/-1grwxE0SE68LqQ7cp7IwA" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='S4D(1)/200 Sort Order' idx='*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" CursorMotionType="Smooth" DelayAfter="2" DisplayName="Click 'Button Adopt (Enter)'" sap:VirtualizedContainerService.HintSize="416,218.4" sap2010:WorkflowViewState.IdRef="NClick_19" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9189f9b0-8c0b-4398-bd6e-6f1af062b562" Version="V4">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable ContentHash="oH8WXdubY0-tht3MEO9T1Q" DesignTimeRectangle="1133, 615, 31, 31" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;sap id='tbar[0]/btn[0]' /&gt;" Guid="f65e3b33-cf26-42bd-ac69-feb0ab6686c1" InformativeScreenshot="6d89d56390c21fd527fe1c2cb1e573ad.png" Reference="FzPfEAG3l0KwKxqQEPE9qQ/u3LbPdKFOEKvyzCDUb3EEQ" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='S4D(1)/200 Sort Order' idx='*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+                        <uix:TargetAnchorable.PointOffset>
+                          <uix:PointOffset Position="BottomRight" />
+                        </uix:TargetAnchorable.PointOffset>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                </Sequence>
+                <Sequence DisplayName="Export to excel" sap:VirtualizedContainerService.HintSize="449.6,49.6" sap2010:WorkflowViewState.IdRef="Sequence_40">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" Key="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="416,168.8" sap2010:WorkflowViewState.IdRef="SendHotkey_5" KeyModifiers="Alt">
+                    <ui:SendHotkey.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="7df8c836-86c5-4365-b4ab-2fe65c7edcb9">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:SendHotkey.Target>
+                  </ui:SendHotkey>
+                  <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="416,168.8" sap2010:WorkflowViewState.IdRef="SendHotkey_6" Key="ea" KeyModifiers="None">
+                    <ui:SendHotkey.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="152ce368-87b6-4c8e-90b2-2ad21ec5e550">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:SendHotkey.Target>
+                  </ui:SendHotkey>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Button Continue (Enter)'" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9189f9b0-8c0b-4398-bd6e-6f1af062b562" Version="V4">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable ContentHash="Q-TuXG2MqEuXNeqLMObuOQ" DesignTimeRectangle="688, 275, 31, 31" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;sap id='tbar[0]/btn[0]' /&gt;" Guid="3e1ec8ee-ab06-42f2-94ee-607f0c4df416" InformativeScreenshot="e3cea51bd014c36b3053b23161314007.png" Reference="FzPfEAG3l0KwKxqQEPE9qQ/kE7HbFfIgUqezRJ4FG49-w" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='S4D(1)/200 Select Spreadsheet' idx='*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'CTEMP'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="416,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_6" ScopeIdentifier="9189f9b0-8c0b-4398-bd6e-6f1af062b562" Text="C:\Users\kpi\Documents\UiPath\POC_Reconcile_KPC\Data\Input" Version="V4">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable ContentHash="jVaIaN-U_0-7Dme6PbRACA" DesignTimeRectangle="187, 48, 794, 31" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;sap id='usr/ctxtDY_PATH' /&gt;" Guid="a08af3e1-ab57-4424-9b1d-18fef51881d3" InformativeScreenshot="4700956158235d89cdea250720e32841.png" Reference="FzPfEAG3l0KwKxqQEPE9qQ/YqaYi61k5k-wCt1I-tWkMg" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='S4D(1)/200 Save File' idx='*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'EXPORT.XLSX'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="416,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_7" ScopeIdentifier="9189f9b0-8c0b-4398-bd6e-6f1af062b562" Text="ZFCORP01_COM_S4.xlsx" Version="V4">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable ContentHash="n6_PpnPF6UW7YTVQhBiMSw" DesignTimeRectangle="187, 82, 794, 31" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;sap id='usr/ctxtDY_FILENAME' /&gt;" Guid="8cad1550-008c-4ade-93cd-2fc7ef58fc23" InformativeScreenshot="fd39411766c482afade7890dfe280d2a.png" Reference="FzPfEAG3l0KwKxqQEPE9qQ/2-JI8NsuQUmMntzHrcL7vQ" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='S4D(1)/200 Save File' idx='*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Generate'" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9189f9b0-8c0b-4398-bd6e-6f1af062b562" Version="V4">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable ContentHash="7qHOj3k8XUWqs2EhIYRd7Q" DesignTimeRectangle="777, 139, 97, 31" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;sap id='tbar[0]/btn[0]' /&gt;" Guid="ecd0da29-24eb-4bcd-b96e-80ba2292e616" InformativeScreenshot="9cdddacaad54032ec35b2eefe4904008.png" Reference="FzPfEAG3l0KwKxqQEPE9qQ/qNIqzVXpd02Vighmqhx71w" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='S4D(1)/200 Save File' idx='*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'saplogon.exe SAP GUI Se…'" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9189f9b0-8c0b-4398-bd6e-6f1af062b562" Version="V4">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable ContentHash="i3DPqQAr9UmdXBPKCMrwlg" DesignTimeRectangle="30, 362, 123, 43" DesignTimeScaleFactor="1.25" Guid="11a23942-bc97-432d-9fbf-68c601be03b2" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHsAAAArCAYAAABYSfeIAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAMiSURBVHhe7dzPaxNBFMDx/DP5E3LIOX9HyaUUQT1KD4IKEvTkeqhUrLZYhUoQxUvwoDcpeih4qKgEqqRQQ0TTUFNN2+xz387M7s707W4QoTuz7/BFmuyP0s++1+jBymB0CFw5YuwSFWL/7j+CB8tXYX7+HOdQaIq2Gvad25fh+ZMb4E++ABz1OAdCSzRFWw374oXzMNpdB/9oD2D6i3MgtERTtCWx4fgbwPgN50KBZTb2yYA+kbOvwDIT2z/epU/krAsts7EnnwEOXnEOhJap2PuIPd4EGL3gHAgt0ZTEHvYegn/wGmC4wTkQWqIpY5cgxi5RjmN74NUqUKk0oEN+Xa4sx1Z4QbU56Ka+z9iY3dhbc1BH6DAKkLGT2Y3dboTQC82q+LNtHsPYyazG7jQlnJrw5qJxDGMnsxh7ERYi4DTE2bC7wYaoh6/Lag3w2l78fgs3RxW8rfic1HumPnhnn73YaoXL1S1AzFWej63Oo4quJe9Vb8UPQPLzgnZP4/sqUtZiRytcvUZOVA52BBZMbXKScdLD19V5yS0ijhGoVbEREq/TW6AYWYpN/PDJtZqNraZam1iZvilOXzt82IL7i+OM65N/DTz77MSWqzKteIVmY4vtkDKFxurWJ1Y8bOF95HYQ96QewuJkJbZAyij6Yf8/bA01fM+4Jt5Tgy9eFmLL6SFXpXwvBdf8evY1jsVTq1a4dmzw/XS0lV687MM2J85ITb1Aysae/QOaKLx2LfhQFl1fFn5P8sNaQX9fY9ZhZ65eTD4MYvJysIPUBFOZ6zg+Vn8I4o2S/hAWIcuws1a4KrnK87GxvH9UiVKbILHCVfpGKWbWTTb371mHHU3fDFHnlzme7BKVif3j61pwwEuAn2ucA6ElmpLY33dWwR89I0/k7Ast0ZTE7ndXYMrYzoSWaEpi7326C9N9xnYltERTEru3vcTYDoWWaEpi77y/BSfDp+SJnH2hJZqS2B/e3oRxfwP+9Fc4B0JLND2FfW/pCqwuX4Ltzevw8V2LcyC0RFO01bAng8ewfv8a+Z+wcPaGpmirYXPliLFLFGOXpkP4C7h+7JQZtVZgAAAAAElFTkSuQmCC" InformativeScreenshot="99ba7dec200367c87dde0953b036ba4b.png" Reference="FzPfEAG3l0KwKxqQEPE9qQ/Qx_wovfSe02seVeWbjkXXA" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='SAP GUI Security' idx='*' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V4" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="5" DisplayName="Click 'saplogon.exe SAP GUI Se…(1)'" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9189f9b0-8c0b-4398-bd6e-6f1af062b562" Version="V4">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable ContentHash="0otoxuiHUEai-8w9PTwj8Q" DesignTimeRectangle="28, 339, 125, 42" DesignTimeScaleFactor="1.25" Guid="498ce0d5-c276-441a-b1fe-eb5150828cf1" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAH0AAAAqCAYAAACeC1RqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAMiSURBVHhe7ZxBaxNBFMfzZfIRcsg5n6PkUoqgHqUHQQUJejIeKhWrLVahEkTxEjzoTYoeCh4qKoFWUqghommoqaZt9jlvZ2Z3Z5ydXUTozuw7/Ci7O/tm6e+9fzY9tDIcHwFRLkh6CVGk/xo8ggfLV2F+/hzhEegU3Rql37l9GZ4/uQHBdBfguE94ALpEp+jWKP3ihfMw3luH4HgfYPaT8AB0iU7RrVU6nHwFmLwhfIC5zCf9dGguQLgHc5lLenCyZy5AOAe6zCd9+hng8BXhAegyU/oBSp9sAoxfEB6ALtGpVfqo/xCCw9cAow3CA9AlOiXpJYKkl5CSSG9Du1aBSqUBXeNxufBEupTIqM1BL/U6SUf8kL41B3UUHmISSdKT+CG90wiFLzSr/GdHX0PSk3ghvdsUAuXENxe1NSQ9iQfSF2EhEp0mM5/0HkuMenheUGtAu9OOr7cwSarQ3orvSd0ztQHPHvely2gXkc7F6BGfLV3eZyKqJfaqt+JGSL5PKHtqz1UknJceRbs8Z5ywDOmRODbFycnGyQ/Py/uSqcLXcLlVnhCJ8+ZUKAaOSzdIMMatXbqccmWCBWpy/F07bDq2P1+n1Td+fTx73JYuIjSNOFrt0nlapEylFunqBPOmC/cRacH3NDVjcXBaOpdlIfql/z/pitzwmlYT91QaoHg4LF1MkzFCxbUUyfpx/nhH4imW0a6sZc/TVaK+eLgrXZ9ADZkCXJZdev4XOU5Yu8Ze3qL6gvCZxEtdQT/PEWelWyMZEU3BJzFDOkNOtAk9puO1ajPECZPejEXAUem2aJckIz5bOpL1x5kImQyJaJeoCVNMnJ104t9xVno0jTkw3V9maNJLSC7p37+ssYUvAX6sER6ALtGpVfq3nVUIxs+MBQj3QJfo1Cp90FuBGUn3BnSJTq3S9z/dhdkBSfcFdIlOrdL720sk3SPQJTq1St95fwtOR0+NBQj3QJfo1Cr9w9ubMBlswO/BCuEB6BKdpkq/t3QFVpcvwfbmdfj4rkV4ALpEp+jWKH06fAzr968Z/1kN4S7oFN0apRPlgKSXjiP4A+QqV+T8d2ODAAAAAElFTkSuQmCC" InformativeScreenshot="33a069db46d61c39da358e449c33b5ae.png" Reference="FzPfEAG3l0KwKxqQEPE9qQ/xDJyP8YSeker9u-6MZsmTA" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='SAP GUI Security' idx='*' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V4" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                  <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="416,166.4" sap2010:WorkflowViewState.IdRef="KillProcess_3" ProcessName="excel" />
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Button Back (F3)'" sap:VirtualizedContainerService.HintSize="416,218.4" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9189f9b0-8c0b-4398-bd6e-6f1af062b562" Version="V4">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable ContentHash="6GB5kE5NbEaSIVxuS6JWMQ" DesignTimeRectangle="416, 71, 33, 33" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;sap id='tbar[0]/btn[15]' /&gt;" Guid="99409845-7f0b-4360-944f-752d739b3e79" InformativeScreenshot="65c8a8c4eddb47c3944f08df0e0f0b7e.png" Reference="FzPfEAG3l0KwKxqQEPE9qQ/YxFC6hwezUOqJtH612asLA" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='S4D(1)/200 Actual VS Budget (By cost Center)' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                </Sequence>
+              </Sequence>
+            </ActivityAction>
+          </uix:NApplicationCard.Body>
+          <uix:NApplicationCard.TargetApp>
+            <uix:TargetApp Area="-9, -9, 2578, 1398" ContentHash="-F9aHjwalEGAn5JkdLL1xw" FilePath="C:\Program Files (x86)\SAP\FrontEnd\SAPgui\saplogon.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAKGSURBVFhH7ZXfa1JRHMCP3hVB1FAKaqS7NI1gex1U/rhXljPoh1BtowbRqpcRRG1LvdfqPRfVqxRNW2NOh8OtoL0YVKN/wP0BgwW1mo4p6tVx6nvxFOgcbXov+XA/8HkS7vl4zvneixQUFBQUFKRDTe1SU7v3UGBTg0iRNISovc2ovdfdZfNGONDbAHIsH2ZIHkL7O0yo837QBz8IIP7PChAXPWrrp0leQwWKcSHdSecxklaiQQKLrDcc05suGlRUk4qkldjXfgp1jgR8Nj4sgFhaq8ZUusFwoXib/bqeJJXoOm03goZzA3cM/U9iL66OvhNALKV9j99i+8PpUmz1OPFY542OW+VxIqlM/kMynYuvrufii0s/lz4lljc+JpaxlD6d/oId3inMclUD8xA3STNXdCSpnFRG+JVM57EcroJzC4vY+SCILSPj1QLzcOfGdSecbQiVX7m/yBkY+5zA3cN+bL43hhluqvKICywfierNl1pVamqLOkDywPU8XlnL4tmFBD7rfonNQ2PVdq5o9YTmDfaBFpKxNVIHrqQgDnbu8qPX2CTunCdUGSfeuZjRcePfcSIQmIMHZ2FIcvDPi9+SGVyP4rH+iWO5TXFZho8EaGvv9uJEvq/lur/+SNtn38fP3PUFooPPZwqDz2ZwrZ7ng9g0FCA7V3a04s69goGgkUpNVt8GGq0WaTRa1HyYVnX0eketrgnB6nqDa9Y9gVkeXinlA1GEAYm0WnpaYCDIyjtExk9dgfFMzhkcNw+SpWpDpsAs7GSo7jgRGQIzEOenLT2HyBL1IXFgFgbEDwNxpOY7twl40PELtxl4+DDoqkf4QlyjrX0HdjStCgoKCgoKMoDQb0L04V6A4GiHAAAAAElFTkSuQmCC" InformativeScreenshot="50641504cc812b9736c746e8a49bb68b.png" Reference="FzPfEAG3l0KwKxqQEPE9qQ/Dl25rn6pa0-AkJAeZp3f2Q" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='S4D(1)/200 Actual Sales and Cost by Category' /&gt;" Title="S4D(1)/200 Actual Sales and Cost by Category" Version="V1" />
+          </uix:NApplicationCard.TargetApp>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
         </uix:NApplicationCard>
       </Sequence>
     </Sequence>
