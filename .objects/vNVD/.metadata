@@ -1,0 +1,12 @@
+﻿{
+  "Name": "S4D(1)200 Actual Sales and Cost by Category",
+  "Type": "App",
+  "Id": "vNVDlJJsQE226Xj3D_iH-Q",
+  "Reference": "FzPfEAG3l0KwKxqQEPE9qQ/vNVDlJJsQE226Xj3D_iH-Q",
+  "Created": "2024-11-07T04:46:34.3123181Z",
+  "Updated": "2024-11-07T04:46:34.3123181Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.6.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

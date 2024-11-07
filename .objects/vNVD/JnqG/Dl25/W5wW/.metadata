@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Local Currency",
+  "Type": "Element",
+  "Id": "W5wWPwznmUGGACjcTQJ3jQ",
+  "Reference": "FzPfEAG3l0KwKxqQEPE9qQ/W5wWPwznmUGGACjcTQJ3jQ",
+  "ParentRef": "FzPfEAG3l0KwKxqQEPE9qQ/Dl25rn6pa0-AkJAeZp3f2Q",
+  "Created": "2024-11-07T04:46:34.6271249Z",
+  "Updated": "2024-11-07T04:46:34.6271249Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.6.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

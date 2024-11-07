@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="gO37httDoEKxwyqwgPlrDw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="66, 707, 524, 31" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;sap id='usr/radP_CURCOM' /&gt;" Guid="e6fc2216-b13f-4561-8a75-28018b87beb1" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='S4D(1)/200 Actual VS Budget (By cost Center)' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="5a3d33d3ff0a014be3dcca4ff43e84de.png" xmlns="">0LVcJstI7702wHQ02cyJYJQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
