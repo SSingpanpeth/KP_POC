@@ -1,0 +1,14 @@
+﻿{
+  "Name": "CTextField Financial St…",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "R2C7UVuKV063T5vdcZ0Rcw",
+  "Reference": "FzPfEAG3l0KwKxqQEPE9qQ/R2C7UVuKV063T5vdcZ0Rcw",
+  "ParentRef": "FzPfEAG3l0KwKxqQEPE9qQ/clqde0vuVkizQMBNoiFohA",
+  "Created": "2024-11-07T06:52:08.9613237Z",
+  "Updated": "2024-11-07T06:52:08.9613237Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.6.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

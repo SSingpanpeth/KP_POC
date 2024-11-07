@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Further Selections",
+  "Type": "Element",
+  "Id": "xsDJ_6VmBEGeQ-JEnrBqRQ",
+  "Reference": "FzPfEAG3l0KwKxqQEPE9qQ/xsDJ_6VmBEGeQ-JEnrBqRQ",
+  "ParentRef": "FzPfEAG3l0KwKxqQEPE9qQ/clqde0vuVkizQMBNoiFohA",
+  "Created": "2024-11-07T07:16:35.2613896Z",
+  "Updated": "2024-11-07T07:16:35.2613896Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.6.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

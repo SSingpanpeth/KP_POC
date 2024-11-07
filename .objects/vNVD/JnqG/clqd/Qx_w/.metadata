@@ -1,0 +1,13 @@
+﻿{
+  "Name": "saplogon.exe SAP GUI Se…",
+  "Type": "Element",
+  "Id": "Qx_wovfSe02seVeWbjkXXA",
+  "Reference": "FzPfEAG3l0KwKxqQEPE9qQ/Qx_wovfSe02seVeWbjkXXA",
+  "ParentRef": "FzPfEAG3l0KwKxqQEPE9qQ/clqde0vuVkizQMBNoiFohA",
+  "Created": "2024-11-07T06:41:18.3829272Z",
+  "Updated": "2024-11-07T06:41:18.3829272Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.6.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

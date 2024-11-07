@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Special evaluations",
+  "Type": "Element",
+  "Id": "fRCPYDa5Q0Gz4jy7CMOlqA",
+  "Reference": "FzPfEAG3l0KwKxqQEPE9qQ/fRCPYDa5Q0Gz4jy7CMOlqA",
+  "ParentRef": "FzPfEAG3l0KwKxqQEPE9qQ/clqde0vuVkizQMBNoiFohA",
+  "Created": "2024-11-07T07:16:04.6257225Z",
+  "Updated": "2024-11-07T07:16:04.6257225Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.6.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

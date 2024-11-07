@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Text with Tabs",
+  "Type": "Element",
+  "Id": "iWsYQTz2cUGP0jkREk75LA",
+  "Reference": "FzPfEAG3l0KwKxqQEPE9qQ/iWsYQTz2cUGP0jkREk75LA",
+  "ParentRef": "FzPfEAG3l0KwKxqQEPE9qQ/clqde0vuVkizQMBNoiFohA",
+  "Created": "2024-11-07T07:07:04.8491056Z",
+  "Updated": "2024-11-07T07:07:04.8491056Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.6.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
