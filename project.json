@@ -1,5 +1,5 @@
 {
-  "name": "POC_Reconcile_KPC",
+  "name": "KP_POC",
   "projectId": "ae12c010-c3d0-4376-ae04-ffc9cec6cee2",
   "description": "Reconcile KPC Actual and Financial Statement",
   "main": "Main.xaml",

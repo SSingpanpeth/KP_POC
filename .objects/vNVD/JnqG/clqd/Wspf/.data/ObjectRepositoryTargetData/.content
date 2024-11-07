@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="gBB-xy4-dkCERHBbVeVgcQ" Reference="FzPfEAG3l0KwKxqQEPE9qQ/WspfSU7AME2eqmXS_M_Akw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="347, 163, 36, 27" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;sap colName='SUBTOT' id='usr/subSUB_CONFIGURATION:SAPLSALV_CUL_GROUPING_CRITERIA:0610/cntlCONTAINER2_SORT/shellcont/shell' tableRow='0' /&gt;" Guid="987a3b85-b95e-4694-b3ae-f88173015e8d" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='S4D(1)/200 Sort Order' idx='*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="0504dd0ec979abf0509b0e87f5e108d7.png" xmlns="">08vm8CPwkI0a_D3VDp_5E7Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

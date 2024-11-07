@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="4xYMVYsmwEqBFyUWPCVYUg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="347, 190, 36, 27" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;sap colName='SUBTOT' id='usr/subSUB_CONFIGURATION:SAPLSALV_CUL_GROUPING_CRITERIA:0610/cntlCONTAINER2_SORT/shellcont/shell' tableRow='1' /&gt;" Guid="ca93ae7f-524b-442e-9792-45eda77db95c" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='S4D(1)/200 Sort Order' idx='*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="d7d79a49680c3cb04d2453326bf44495.png" xmlns="">0t8hLkcSA90iocfM5CHh-2w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Check</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

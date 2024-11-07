@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="G39s36ygokiEOplWlVsPHQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="1133, 615, 31, 31" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;sap id='tbar[0]/btn[0]' /&gt;" Guid="f65e3b33-cf26-42bd-ac69-feb0ab6686c1" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='S4D(1)/200 Sort Order' idx='*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="6d89d56390c21fd527fe1c2cb1e573ad.png" xmlns="">0X8_9AaRTCUGpDb0_eJWLTg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
