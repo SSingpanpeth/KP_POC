@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="4boZqbNws0KXEyeS6Ozp_w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="lboFCA8srUKQz0gHzkM21w" Reference="FzPfEAG3l0KwKxqQEPE9qQ/fRCPYDa5Q0Gz4jy7CMOlqA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
     <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="242, 743, 190, 33" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;sap id='usr/tabsTABSTRIP_TABBL1/tabpUCOM30' /&gt;" Guid="f45c756f-3ac5-4d48-8b2b-f66df83bbe8e" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='S4D(1)/200 Financial Statements' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="7d0813e93bf59414e477dc6dc98bd81e.png" xmlns="">0C6PtMXuHcE-kcvVhECUXwA</imageRef>
+      <imageRef attrName="InformativeScreenshot" originalValue="7d0813e93bf59414e477dc6dc98bd81e.png" xmlns="">0VpB1gTI9zkW62mLdPiXKVw</imageRef>
     </TargetAnchorable>
-    <x:String x:Key="ActivityType">Click</x:String>
+    <x:String x:Key="ActivityType">None</x:String>
   </ObjectRepositoryTargetData.Data>
 </ObjectRepositoryTargetData>
